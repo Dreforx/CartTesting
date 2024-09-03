@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+}
+
+/* Container Styles */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 56px;
+    font-family:'Courier New', Courier, monospace;
+    color: #11531f;
+    text-decoration-color: #218838;
+    justify-content: center;
+}
+#cart-items {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Item Styles */
+#products div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 50px 200px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#products div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+#products img {
+    max-width: 100%;
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+#products h3 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: monospace;
+    color: #1a9234;
+    text-decoration-color: #218838;
+    justify-content: center;
+    
+}
+
+#products h4 {
+    font-size: 0.8em;
+    text-align: center;
+    color: #867d86;
+    text-decoration-color: #326ba5;
+    justify-content: center;
+}
+#products p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #cf6fc7;
+    text-decoration-color: #326ba5;
+    justify-content: center;
+}
+
+#products button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.8s ease, transform 0.1s ease;
+}
+
+#products button:hover {
+    background-color: #5e1f42;
+    border-color: #5e1f42;
+    color: #ffffff;
+}
+
+#products button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    
+}
+
+#clear-cart-btn {
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+    margin-left: 45.8%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#checkout {
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 45.8%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#total-price {
+    margin-left: 45.8%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    font-family: monospace;
+}
+
+#checkout:hover {
+    background-color: #92154f;
+    transition: background-color 0.4s ease;
+}
+
+#clear-cart-btn:hover {
+    background-color: #9c9c9c;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Cart Item Styles */
+#cart-items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#cart-items div:last-child {
+    border-bottom: none;
+}
+
+#cart-items h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#cart-items p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Price and Quantity Styles */
+#cart-items p[id^="value-"], #cart-items p[id^="cant-"] {
+    font-size: 0.9em;
+    color: #868e96;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
